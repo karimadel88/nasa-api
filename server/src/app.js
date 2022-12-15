@@ -9,7 +9,7 @@ const launchesRouter = require("./routes/launches/launches.router");
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "*",
   })
 );
 
