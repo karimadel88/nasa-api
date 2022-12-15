@@ -7,12 +7,6 @@ const app = express();
 const planetsRouter = require("./routes/planets/planets.router");
 const launchesRouter = require("./routes/launches/launches.router");
 
-app.use(
-  cors({
-    origin: "http://localhost:8000",
-  })
-);
-
 app.use(morgan("combined"));
 
 // express.json() is a middleware that parses the incoming request body
